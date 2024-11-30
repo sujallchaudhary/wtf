@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  background: linear-gradient(135deg, #f26eae, #8a00d4, #041a56); /* Magenta to Purple to Blue */
+}
+
+body {
+  min-height: 100vh;
+  background-color: linear-gradient(135deg, #f26eae, #8a00d4, #041a56);
+}
+
+
+.glass-morphism {
+  @apply bg-white/10 backdrop-blur-lg;
+}
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 8s linear infinite;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
